@@ -1,0 +1,88 @@
+{
+    "name": "ZNC",
+    "id": "ZNC",
+    "packaging_format": 1,
+    "description": {
+        "en": "An advanced IRC Bouncer.",
+        "fr": " ZNC est un bouncer IRC aux fonctionnalitées avancées."
+    },
+    "version": "1.0~ynh1",
+    "url": "https://znc.in",
+    "license": "free",
+    "maintainer": {
+        "name": "Sagacious Zu",
+        "email": "sagaciouszu@atasloth.space",
+        "url": "https://github.com/sagaciouszu/ynh_znc"
+    },
+    "requirements": {
+        "yunohost": ">= 2.7.14"
+    },
+    "multi_instance": false,
+    "services": [
+        "nginx",
+        "php5-fpm"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain name for ZNC",
+                    "fr": "Choisissez un nom de domaine pour ZNC"
+                },
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for ZNC",
+                    "fr": "Choisissez un chemin pour ZNC"
+                },
+                "example": "/znc",
+                "default": "/znc"
+            },
+            {
+                "name": "admin",
+                "type": "user",
+                "ask": {
+                    "en": "Choose an admin user",
+                    "fr": "Choisissez l’administrateur"
+                },
+                "example": "themonarch"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "ask": {
+                    "en": "Is it a public application?",
+                    "fr": "Est-ce une application publique ?"
+                },
+                "default": true
+            },
+            {
+                "name": "language",
+                "ask": {
+                    "en": "Choose the application language",
+                    "fr": "Choisissez la langue de l'application"
+                },
+                "choices": ["fr", "en"],
+                "default": "en"
+            },
+            {
+                "name": "password",
+                "type": "password",
+                "ask": {
+                    "en": "Set the administrator password",
+                    "fr": "Définissez le mot de passe administrateur"
+                },
+                "help": {
+                    "en": "Use the help field to add an information for the admin about this question.",
+                    "fr": "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
+                },
+                "example": "Choose a password"
+            }
+        ]
+    }
+}
