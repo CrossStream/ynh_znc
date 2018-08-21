@@ -259,7 +259,7 @@ ynh_use_logrotate
 ###		- Remove the section "REMOVE SERVICE FROM ADMIN PANEL" in the remove script
 ###		- As well as the section ADVERTISE SERVICE IN ADMIN PANEL" in the restore script
 
-yunohost service add NAME_INIT.D --log "/var/log/FILE.log"
+yunohost service add NAME_INIT.D --log "/var/log/znc.log"
 
 #=================================================
 # SETUP SSOWAT

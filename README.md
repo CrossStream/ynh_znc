@@ -1,21 +1,10 @@
-# Usage of this package (REMOVE THIS SECTION BEFORE RELEASE)
-- Copy this app before working on it.
-- Edit `conf/nginx.conf` file to match application prerequisites.
-- Edit `manifest.json` with application specific information.
-- Edit the `install`, `upgrade`, `remove`, `backup`, and `restore` scripts.
-- Add a `LICENSE` file for the package.
-- Edit `README.md`.
+# ZNC Bouncer for Yunohost
+I was a bit surprised that there was no package for ZNC, so I decided to get that dopamine hit and do it myself instead of complaining.
 
-# Example app for YunoHost
-
-[![Integration level](https://dash.yunohost.org/integration/REPLACEBYYOURAPP.svg)](https://ci-apps.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20%28Community%29/lastBuild/consoleFull)  
-[![Install REPLACEBYYOURAPP with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=REPLACEBYYOURAPP)
-
-> *This package allow you to install REPLACEBYYOURAPP quickly and simply on a YunoHost server.  
-If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
+Still a work in progress.
 
 ## Overview
-Quick description of this app.
+This is a ZNC bouncer. If you're not sure what that is, this probably isn't for you.
 
 **Shipped version:** 1.0
 
@@ -25,33 +14,28 @@ Quick description of this app.
 
 ## Demo
 
-* [Official demo](Link to a demo site for this app)
+* [ZNC homepage](https://znc.in/)
 
 ## Configuration
 
-How to configure this app: by an admin panel, a plain file with SSH, or any other way.
+I'll fill this out later when I figure it out myself.
 
 ## Documentation
 
- * Official documentation: Link to the official documentation of this app
- * YunoHost documentation: If specific documentation is needed, feel free to contribute.
+ * I'll fill this out later when I figure it out myself.
 
 ## YunoHost specific features
 
 #### Multi-users support
 
-Are LDAP and HTTP auth supported?
-Can the app be used by multiple users?
+*Are LDAP and HTTP auth supported?
+*Can the app be used by multiple users?
 
-#### Supported architectures
-
-* x86-64b - [![Build Status](https://ci-apps.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)/badge/icon)](https://ci-apps.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)%20(%7EARM%7E)/badge/icon)](https://ci-apps-arm.yunohost.org/jenkins/job/REPLACEBYYOURAPP%20(Community)%20(%7EARM%7E)/)
-* Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/jenkins/job/REPLACEBYYOURAPP%20(Community)/badge/icon)](https://ci-stretch.nohost.me/jenkins/job/REPLACEBYYOURAPP%20(Community)/)
+ 50/50 chance
 
 ## Limitations
 
-* Any known limitations.
+* Probably!
 
 ## Additional information
 
@@ -67,16 +51,3 @@ https://yunohost.org/packaging_apps
  * YunoHost website: https://yunohost.org/
 
 ---
-
-Developers info
-----------------
-
-**Only if you want to use a testing branch for coding, instead of merging directly into master.**
-Please do your pull request to the [testing branch](https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing).
-
-To try the testing branch, please proceed like that.
-```
-sudo yunohost app install https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing --debug
-or
-sudo yunohost app upgrade REPLACEBYYOURAPP -u https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing --debug
-```
