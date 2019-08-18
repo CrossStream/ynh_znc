@@ -1,6 +1,6 @@
 {
-    "name": "ZNC",
-    "id": "ZNC",
+    "name": "znc",
+    "id": "znc",
     "packaging_format": 1,
     "description": {
         "en": "An advanced IRC Bouncer.",
